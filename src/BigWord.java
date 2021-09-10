@@ -7,8 +7,8 @@ public class BigWord {
 
         HashMap<String, Integer> wordsFrequency = new HashMap<>();
 
-        for (String sentence : sentences) {
-            for (String word : sentence.split(" ")) {
+        for (String sentence: sentences) {
+            for (String word: sentence.split(" ")) {
 
                 word = word.toLowerCase();
 

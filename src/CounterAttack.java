@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -7,10 +8,10 @@ public class CounterAttack {
 
         int[] counts = new int[words.length];
 
-        String[] sentence = str.split(" ");
+        ArrayList<String> sentence = (ArrayList<String>) Arrays.asList(str.split(" "));
 
         for(int i = 0; i < words.length; i++) {
-            counts[i] = Collections.frequency(Arrays.asList(sentence), words[i]);
+            counts[i] = Collections.frequency(sentence, words[i]);
         }
 
         return counts;

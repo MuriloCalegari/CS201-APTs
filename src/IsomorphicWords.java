@@ -19,7 +19,6 @@ public class IsomorphicWords {
     }
 
     public String iso(String word) {
-
         char[] ret = new char[word.length()];
         HashMap<Character, Character> mappedCharacters = new HashMap<>();
 

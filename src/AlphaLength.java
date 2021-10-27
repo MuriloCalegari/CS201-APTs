@@ -10,7 +10,7 @@ public class AlphaLength {
 
         ListNode first = null;
         ListNode current = null;
-
+        
         for(String word: wordsSet) {
             if(first == null) {
                 first = new ListNode(word.length(), null);

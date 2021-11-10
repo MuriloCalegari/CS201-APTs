@@ -4,7 +4,8 @@ public class TreeNode {
     public int info;
     public TreeNode left;
     public TreeNode right;
-    TreeNode(int x){
+
+    public TreeNode(int x){
         info = x;
     }
     TreeNode(int x, TreeNode lNode, TreeNode rNode){

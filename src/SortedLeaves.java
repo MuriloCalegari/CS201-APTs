@@ -11,7 +11,7 @@ public class SortedLeaves {
 
         List<Integer> info = new ArrayList<>();
 
-        findLeafLists(info, tree);
+        updateList(info, tree);
 
         info.sort(Comparator.naturalOrder());
 
@@ -24,17 +24,17 @@ public class SortedLeaves {
         return ret;
     }
 
-    private void findLeafLists(List<Integer> letters, TreeNode tree) {
+    private void updateList(List<Integer> letters, TreeNode tree) {
         if(tree.left == null && tree.right == null) {
             letters.add(tree.info);
         }
 
         if (tree.left != null) {
-            findLeafLists(letters, tree.left);
+            updateList(letters, tree.left);
         }
 
         if(tree.right != null) {
-            findLeafLists(letters, tree.right);
+            updateList(letters, tree.right);
         }
     }
 }

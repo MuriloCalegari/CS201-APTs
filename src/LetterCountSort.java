@@ -9,9 +9,7 @@ public class LetterCountSort {
 
     public String[] sort(String[] list, String specialChars) {
 
-        char[] array = specialChars.toCharArray();
-
-        for(Character c: array) {
+        for(Character c: specialChars.toCharArray()) {
             this.specialChars.add(c);
         }
 
@@ -26,11 +24,9 @@ public class LetterCountSort {
     }
 
     private int getCount(String word) {
-        char[] chars = word.toCharArray();
-
         int count = 0;
 
-        for(Character c: chars) {
+        for(Character c: word.toCharArray()) {
             if(specialChars.contains(c)) count++;
         }
 
